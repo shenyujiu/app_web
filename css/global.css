@@ -1,0 +1,30 @@
+html,body{
+    font-family: "Microsoft Sans Serif";
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+
+.h3Title{
+    font-size: 4.2vw;
+}
+
+.bannerText{
+    font-size: 3vw;
+    color: #666666;
+}
+
+.linkText{
+    font-size: 3vw;
+    color: #C79060;
+    font-weight: 700;
+}

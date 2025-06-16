@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>饿了么 首页</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="icon-location-box">
+            <div class="icon-location"></div>
+        </div>
+        <div class="location-text">
+            云南大学呈贡校区力行楼<i style="margin-left: 0.5vw" class="fa fa-caret-down"></i>
+        </div>
+    </div>
+    <div class="search">
+        <div id="fixedSearchBox" class="search-box">
+            <div class="search-panel">
+                <i class="fa fa-search" style="flex: 0 0 6vw; padding-left: 8px; padding-right: 3px"></i>
+                <input id="keyWords" type="text" placeholder="请输入要查询的内容" style="flex: 10; outline: none; border: none; color: #656464">
+                <div class="search-button" style="flex: 0 0 17vw" onclick="searchFood()">搜索</div>
+            </div>
+        </div>
+    </div>
+    <div class="foodType">
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl01.png"/>
+            <p>美食</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl02.png"/>
+            <p>早餐</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl03.png"/>
+            <p>跑腿代购</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl04.png"/>
+            <p>汉堡披萨</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl05.png"/>
+            <p>甜品饮品</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl06.png"/>
+            <p>素食简餐</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl07.png"/>
+            <p>地方小吃</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl08.png"/>
+            <p>米粉面馆</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl09.png"/>
+            <p>包子粥铺</p>
+        </div>
+        <div class="foodTypeItem" onclick="showFoodType(this)">
+            <img src="img/dcfl10.png"/>
+            <p>炸鸡炸串</p>
+        </div>
+    </div>
+    <div class="banner">
+        <h3 class="h3Title" style="margin-bottom: 1.2vw">品质套餐</h3>
+        <div class="bannerText" style="margin-bottom: 4.5vw">搭配齐全吃得好</div>
+        <a class="linkText">立即抢购&nbsp;&nbsp;></a>
+    </div>
+    <div class="member">
+        <div class="left">
+            <img src="./img/super_member.png">
+            <h3 class="h3Title">&nbsp;&nbsp;超级会员&nbsp;&nbsp;</h3>
+            <p class="bannerText">&#8226;&nbsp;&nbsp;每月享超值服务</p>
+        </div>
+        <div class="right linkText">立即开通&nbsp;&nbsp;></div>
+    </div>
+    <div class="recommend">
+        <div class="recommend-line"></div>
+        <p class="h3Title">推荐商家</p>
+        <div class="recommend-line"></div>
+    </div>
+    <div class="recommendType">
+        <div>综合排序<i class="fa fa-caret-down"></i></div>
+        <div>距离最近</div>
+        <div>销量最高</div>
+        <div>筛选<i class="fa fa-filter"></i></div>
+    </div>
+    <div class="businessList">
+        <div class="business">
+            <img src="./img/sj01.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>万家饺子馆（软件园E18店）</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj02.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>小锅饭豆腐馆（全运店）</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj03.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>麦当劳麦乐送（全运路店）</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj04.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>米村拌饭（浑南店）</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj05.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>申记串道（中海康城店）</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj06.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>半亩良田排骨米饭</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj07.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>奶茶</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj08.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>唯一水果捞</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business">
+            <img src="./img/sj09.png">
+            <div class="businessInfo">
+                <div class="businessTitle">
+                    <h3>满园春饼</h3>
+                    <i class="fa fa-mobile-phone"></i>
+                </div>
+                <div class="businessSaleInf">
+                    <div class="businessInfoLeft">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>4.9&nbsp;&nbsp;月售345单</p>
+                    </div>
+                    <div class="businessDiver">蜂鸟专送</div>
+                </div>
+                <div class="businessPak">
+                    <p>&#165;15起送&nbsp;&nbsp;|&nbsp;&nbsp;&#165;3配送</p>
+                    <p>3.22km&nbsp;&nbsp;|&nbsp;&nbsp;30分钟</p>
+                </div>
+                <div class="businessDescript">
+                    <p>这是一段关于这家店的描述...</p>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon">新</div>
+                        <p>饿了么新用户首单立减9元</p>
+                    </div>
+                    <div class="right">
+                        <p>2个活动</p>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="businessInfoPromotion">
+                    <div class="left">
+                        <div class="icon" style="background-color: #F1884F">特</div>
+                        <p>特价商品5元起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 8vw">&nbsp;</div>
+    <div>&nbsp;</div>
+    <div class="footer">
+        <div onclick="location.href='index.html'">
+            <i class="fa fa-home"></i>
+            <p>首页</p>
+        </div>
+        <div>
+            <i class="fa fa-compass"></i>
+            <p>发现</p>
+        </div>
+        <div onclick="location.href='history.html'">
+            <i class="fa fa-file-text"></i>
+            <p>订单</p>
+        </div>
+        <div onclick="location.href='login.html'">
+            <i class="fa fa-user"></i>
+            <p>我的</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

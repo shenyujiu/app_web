@@ -1,0 +1,101 @@
+/*总容器样式*/
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/*头部样式*/
+.header {
+    height: 12vw;
+    width: 100%;
+
+    background-color: #17BAF9;
+    color: white;
+    font-size: 4.8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+}
+
+/*商家列表样式*/
+.business {
+    width: 100%;
+    margin-top: 12vw;
+}
+.businessItem {
+    display: flex;
+    align-items: center;
+    padding: 2.5vw;
+    border-bottom: 1px solid #555555;
+    cursor: pointer;
+}
+.businessInfo {
+    margin-left: 3vw;
+}
+.businessInfo h3{
+    font-size: 4vw;
+    color: #333333;
+}
+.businessInfo p {
+    font-size: 3vw;
+    color: #555555;
+}
+.businessImg {
+    position: relative;
+}
+.businessQty {
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 3.6vw;
+    width: 5vw;
+    height: 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: -1.5vw;
+    right: -1.5vw;
+}
+.businessImg img {
+    width: 23vw;
+    height: 23vw;
+}
+
+/*底部样式*/
+.footer{
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border-top: 1px solid #656464;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.footer div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #656464;
+    padding-top: 2vw;
+}
+.footer p{
+    font-size: 2.5vw;
+}
+.footer i{
+    font-size: 4.5vw;
+}

@@ -1,0 +1,200 @@
+/*总容器样式*/
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/*头部样式*/
+.header {
+    height: 12vw;
+    width: 100%;
+
+    background-color: #17BAF9;
+    color: white;
+    font-size: 4.8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+/*内容样式*/
+.content {
+    width: 100%;
+    margin-top: 14vw;
+    margin-bottom: 14vw;
+}
+.businessInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.businessInfo img {
+    width: 30vw;
+    border-radius: 10px;
+}
+.businessInfo div:nth-child(2) {
+    font-size: 6vw;
+    font-weight: bold;
+    margin-top: 2vw;
+}
+.businessInfo div:nth-child(3) {
+    font-size: 4vw;
+    color: #666666;
+    margin-top: 1vw;
+}
+.businessInfo div:nth-child(4) {
+    font-size: 4vw;
+    color: #666666;
+    margin-top: 1vw;
+}
+.foodList {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.foodList img {
+    width: 20vw;
+    height: 20vw;
+}
+.foodList .foodItem {
+    width: 100%;
+    padding: 2.5vw;
+    display: flex;
+}
+.foodInfo{
+    color: #666666;
+    font-size: 3.1vw;
+    margin-left: 3vw;
+    flex: 9;
+    line-height: 0;
+}
+.foodTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foodTitle h3{
+    font-size: 4vw;
+    color: #333333;
+}
+.foodDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #656464;
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+    color: white;
+}
+.button div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17BAF9;
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+    color: white;
+}
+.foodPrice{
+    display: flex;
+    align-items: center;
+}
+
+/*底部样式*/
+.footer {
+    height: 14vw;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    z-index: 1000;
+}
+.footerLeft {
+    flex: 2;
+    background-color: #505051;
+
+    display: flex;
+}
+.footerIcon {
+    width: 16vw;
+    height: 16vw;
+    color: white;
+    font-size: 7vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #3190E8;
+    border: 1.6vw solid #444444;
+
+    position: relative;
+    top: -7vw;
+    left: 3vw;
+}
+.footerQty {
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vw;
+    background-color: red;
+    font-size: 4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: -1.5vw;
+    right: -1.5vw;
+}
+.footerInfo {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footerInfo div:nth-child(1) {
+    font-size: 5vw;
+    color: white;
+}
+.footerInfo div:nth-child(2) {
+    font-size: 3.6vw;
+    color: #AAAAAA;
+}
+.footerRight {
+    flex: 1;
+    background-color: #38CA73;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 4.6vw;
+    font-weight: bold;
+    cursor: pointer;
+}
